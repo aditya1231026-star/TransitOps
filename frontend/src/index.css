@@ -1,0 +1,44 @@
+/* =====================================================================
+   TransitOps — global reset + design tokens
+   Theme: Royal Blue / Gold / Pearl White
+===================================================================== */
+
+:root {
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #EDEEF4;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+img, svg { display: block; max-width: 100%; }
+
+button, input, select, textarea { font-family: inherit; }
+
+::selection { background: rgba(212, 175, 55, 0.32); }
+
+/* Scrollbars */
+* { scrollbar-width: thin; scrollbar-color: #C9CDDD transparent; }
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-thumb { background: #C9CDDD; border-radius: 4px; }
+*::-webkit-scrollbar-thumb:hover { background: #ABB1C9; }
